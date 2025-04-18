@@ -14,7 +14,7 @@ This repository serves as a collection of AutoHotkey scripts to automate and enh
 
 - **Always On Top Toggle/**  
   - Toggles the always-on-top state of the active window with `Win + T`.  
-  - [AlwaysOnTop README](always-on-top/AlwaysOnTop_README.md)
+  - [AlwaysOnTop README](always-on-top/README.md)
 
 ## Getting Started
 
