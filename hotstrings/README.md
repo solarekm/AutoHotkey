@@ -27,29 +27,32 @@ A straightforward AutoHotkey v2 script that allows you to define custom hotstrin
 :?:C:Test::TestExact             ; case-sensitive, no delimiter required
 
 ; ===== Date and Time =====
-::date::% A_YYYY "/" SubStr("0" . A_MM, -1) "/" SubStr("0" . A_DD, -1)
-::time::% SubStr("0" . A_Hour, -1) ":" SubStr("0" . A_Min, -1)
+::date::
+{
+    date := FormatTime(A_Now, "yyyy/MM/dd")
+    SendText(date)
+}
+::time::
+{
+    time :=FormatTime(A_Now, "HH:mm")
+    SendText(time)
+}
 
 ; ===== Emoticons and Emoji =====
 ::shrug::¯\_(ツ)_/¯
 ::smile::😊
-
-; ===== Code Snippets =====
-::fori::for (i = 0; i < %Count%; i++) {
-    ; ...
-}
 
 ; ===== Contact Information =====
 ::tel::+1 (555) 123-4567
 ::email::your.email@example.com
 
 ; ===== Bracketed Shortcuts =====
-::\[br\]::Best regards.`n
-
-; Or as a multi-line definition:
-::\[br\]::
+::[br]::
 {
-    Send "Best regards.`n"
+    SendText("Best regards,`n")
+    SendText("John Doe`n")
+    SendText("123 Main St.`n")
+    SentText("Anytown, USA")
 }
 ```
 
