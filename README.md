@@ -4,11 +4,17 @@ This repository serves as a collection of AutoHotkey scripts to automate and enh
 
 ## Contents
 
-- **Mouse Jiggler/**
-  - Simulates mouse movements to prevent the system from sleeping or locking.
-  - Contains `MouseJiggler.ahk` and its own `README.md` with configuration and usage details.
+- **Mouse Jiggler/**  
+  - Simulates mouse movements to prevent the system from sleeping or locking.  
+  - [MouseJiggler README](mouse-jiggler/README.md)
 
-<!-- Add more script folders here as you create them -->
+- **Hotstrings/**  
+  - Defines custom hotstrings for expanding shortcuts into full phrases, code snippets, or symbols.  
+  - [Hotstrings README](hotstrings/README.md)
+
+- **Always On Top Toggle/**  
+  - Toggles the always-on-top state of the active window with `Win + T`.  
+  - [AlwaysOnTop README](always-on-top/AlwaysOnTop_README.md)
 
 ## Getting Started
 
