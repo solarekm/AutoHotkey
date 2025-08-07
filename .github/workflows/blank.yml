@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI - ${{ github.actors }}
+name: CI
 
 # Allows you to run this workflow manually from the Actions tab
 on:
